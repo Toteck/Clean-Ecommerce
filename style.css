@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --primary-color: #282828;
+  --second-color:  #F9FAFB;
+  --third-color: #D0D5DD
+  --primary-font-weight: 600;
+  --second-font-weight: 400;
+  --primary-font-size: 1.4rem;
+  --second-font-size: 1.6rem;
+  --third-font-size: 5.4rem;  
+  --fourth-font-size: 1.8rem;
+  --primary-font-line-height: 2.4rem;
+  --second-font-line-height: 2.6rem;
+  --third-font-line-height: 6rem;
+  --fourth-font-line-height: 3rem;
+  --first-letter-spacing: -1px;
+  --second-letter-spacing: -4px;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+.container {
+  padding: 0 5.2rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header .container .menu-section {
+  display: flex;
+  gap: 0 32rem;
+}
+
+header .container nav ul {
+  display: flex;
+  gap: 0 4rem;
+}
+
+header .container .icones ul {
+  gap: 0 2rem;
+}
+
+header .container nav ul li {
+  list-style: none;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: var(--primar-color);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+}
+
+header .container .icones ul li a i {
+  font-size: 2.8rem;
+}
+
+section.hero {
+  display: flex;
+  align-items: center;
+  gap: 0 8rem;
+  background-color: var(--second-color);
+}
+
+.hero .hero-text-container {
+  max-width: 49rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 0;
+}
+
+.hero .hero-text-container a, .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem 0;
+  color: var(--primary-color);
+}
+
+
+.hero .hero-text-container .hero-text h1, h3 {
+  font-weight: 600;
+}
+
+.hero .hero-text-container .hero-text h3 {
+  font-size: var(--second-font-size);
+  line-height: var(--second-font-line-height);
+}
+
+
+.hero .hero-text-container .hero-text h1 {
+  font-size: var(--third-font-size);
+  line-height: var(--third-font-line-height);
+  letter-spacing: var(--first-letter-spacing);
+}
+
+.hero .hero-text-container a, .hero-text p {
+  font-size: var(--fourth-font-size);
+  line-height: var(--fourth-font-line-height);
+}
+
+.hero .hero-text-container .hero-text p {
+  font-weight: 400;
+}
+
+.hero .hero-text-container a {
+  font-weight: 600;
+}
+
+section.logos > div {
+  padding: 5.2rem;
+}
+section.logos .container-logos {
+  padding: 5.6rem 0;
+  display: flex;
+  gap: 0 5rem;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid #D0D5DD;
+  border-bottom: 1px solid #D0D5DD;
+}
