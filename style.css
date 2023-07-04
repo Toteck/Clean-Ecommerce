@@ -325,10 +325,6 @@ section.cta .container-cta .cta-register a {
 }
 
 section.banner {
-  padding: 5.2rem;
-  background-image: url("./imagens/banner.svg");
+  margin: 5.2rem;
 }
 
-.banner .banner-container {
-  
-}
