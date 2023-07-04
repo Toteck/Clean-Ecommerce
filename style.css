@@ -328,3 +328,21 @@ section.banner {
   margin: 5.2rem;
 }
 
+.banner .banner-container {
+  position: relative;
+}
+
+.banner .banner-container img {
+  max-width: 100%;
+}
+
+.banner .banner-container .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+
