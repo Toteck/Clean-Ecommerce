@@ -4,12 +4,6 @@ const card = document.querySelector("div.card");
 
 const products = [
   {
-    img: "./imagens/nairo.svg",
-    category: "Featured",
-    type: "Nairo Series®",
-    bag_id: "um"
-  },
-  {
     img: "./imagens/kensho.svg",
     category: "New",
     type: "Kensho Series®",
@@ -25,6 +19,7 @@ const products = [
 
 products.map(product => {
   const cardClone = card.cloneNode(true);
+  console.log(cardClone);
   cardClone.setAttribute("id", product.bag_id);
   cardClone.querySelector("img").src = product.img;
   cardClone.querySelector(".content > .category").innerHTML = product.category;
@@ -32,4 +27,4 @@ products.map(product => {
   sectionCards.appendChild(cardClone);
 })
 
-card.remove();
+// card.remove();
