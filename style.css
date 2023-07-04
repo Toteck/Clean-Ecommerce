@@ -24,10 +24,16 @@ body {
   --second-font-size: 1.6rem;
   --third-font-size: 5.4rem;  
   --fourth-font-size: 1.8rem;
+  --fifth-font-size: 2rem;
+  --sixth-font-size: 3.4rem;
+  --seventh-font-size: 4.2rem;
+  --eighth--font-size: 2.4rem;
   --primary-font-line-height: 2.4rem;
   --second-font-line-height: 2.6rem;
   --third-font-line-height: 6rem;
   --fourth-font-line-height: 3rem;
+  --fifth-font-line-height: 5.4rem;
+  --fift-font-line-height: 2.8rem;
   --first-letter-spacing: -1px;
   --second-letter-spacing: -4px;
 }
@@ -156,16 +162,173 @@ main section.cards .card .content .category {
 
 main section.cards {
   display: flex;
+  justify-content: center;
+  padding: 5.2rem;
+  gap: 3.2rem;
+}
+
+main section.cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem 0;
 }
 
 main section.cards .card .content .type {
-  color: #282828;
+  color: var(--primar-color);
   text-align: center;
 
   /* Heading/07 */
-  font-size: 20px;
-  font-family: Inter;
-  font-style: normal;
+  font-size: var(--fifth-font-size);
   font-weight: 600;
-  line-height: 28px;
+  line-height: var(--fift-font-line-height);
+}
+
+section.promocao {
+  padding: 5.2rem;
+}
+
+section.promocao .promocao-container{
+  
+  display: flex;
+  gap: 0 11.4rem;
+
+  background-color: var(--second-color);
+  
+}
+
+section.promocao .promocao-container .promo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem 0;
+}
+
+section.promocao .promo-container .promo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section.promocao .promo-container .promo-text h1, h3, h4, p {
+  color: var(--primar-color);
+}
+
+section.promocao .promo-container .promo-text h3 {
+  font-size: var(--second-font-size);
+  line-height: var(--second-font-line-height);
+  font-weight: 600;
+}
+
+section.promocao .promo-container .promo-text h1 {
+  font-size: var(--third-font-size);
+  line-height: var(--third-font-line-height);
+  font-weight: 600;
+}
+
+section.promocao .promo-container .promo-text p {
+  font-size: var(--fourth-font-size);
+  line-height: var(--fourth-font-line-height);
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+section.promocao .promo-container .promo-text h4 {
+  font-size: var(--sixth-font-size);
+  line-height: var(--fourth-font-line-height);
+  font-weight: 600;
+}
+
+section.promocao .promo-container a {
+  font-size: var(--fourth-font-size);
+  line-height: var(--fourth-font-line-height);
+  font-weight: 600;
+
+  display: flex;
+  max-width: max-content;
+  padding: 1.0rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+
+  color: #fff;
+  text-decoration: none;
+}
+
+section.cta {
+  padding: 5.2rem;
+  margin: 5.2rem;
+  border: 2px solid gray;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+section.cta .container-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 54rem;
+}
+
+section.cta .container-cta .cta-text {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+section.cta .container-cta .cta-text h1 {
+  font-size: var(--seventh-font-size);
+  font-weight: 600;
+  line-height: var(--fifth-font-line-height);
+}
+
+section.cta .container-cta .cta-text p {
+  font-size: var(--fourth-font-size);
+  font-weight: 400;
+  line-height: var(--fourth-font-line-height);
+  
+}
+
+section.cta .container-cta .cta-register i {
+  font-size: var(--eighth--font-size);
+}
+
+section.cta .container-cta .cta-register input {
+  font-size: var(--second-font-size);
+}
+
+section.cta .container-cta .cta-register {
+  border-bottom: 1px solid #D0D5DD;
+  max-width: 54rem;
+  display: flex;
+  padding: 1.3rem 0;
+}
+
+section.cta .container-cta .cta-register div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+section.cta .container-cta .cta-register input[type="email"] {
+  border: none;
+  width: 39.5rem;
+}
+
+section.cta .container-cta .cta-register a {
+  font-size: var(--second-font-size);
+  font-weight: 600;
+  line-height: var(--fift-font-line-height);
+  text-decoration: none;
+  color: var(--primar-color);
+}
+
+section.banner {
+  padding: 5.2rem;
+  background-image: url("./imagens/banner.svg");
+}
+
+.banner .banner-container {
+  
 }
