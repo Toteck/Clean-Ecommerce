@@ -17,7 +17,8 @@ body {
 :root {
   --primary-color: #282828;
   --second-color:  #F9FAFB;
-  --third-color: #D0D5DD
+  --third-color: #D0D5DD;
+  --fourth-color: #475467;
   --primary-font-weight: 600;
   --second-font-weight: 400;
   --primary-font-size: 1.4rem;
@@ -34,6 +35,7 @@ body {
   --fourth-font-line-height: 3rem;
   --fifth-font-line-height: 5.4rem;
   --fift-font-line-height: 2.8rem;
+  --six-font-line-height: 2.2rem;
   --first-letter-spacing: -1px;
   --second-letter-spacing: -4px;
 }
@@ -341,8 +343,187 @@ section.banner {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
+  max-width: 48rem;
+}
+
+.banner .banner-container .banner-text {
+  text-align: center;
+}
+
+.banner .banner-container .banner-text  .banner-text-description{
+  margin-bottom: 2.4rem;
+}
+
+.banner .banner-container .banner-text {
+  margin-bottom: 2.4rem;
+}
+
+.banner .banner-container .banner-text div h3 {
+  color: #FFF;
+  text-align: center;
+  
+  font-size: var(--seventh-font-size);
+  font-weight: 600;
+  line-height: var(--fifth-font-line-height);
+  letter-spacing: -0.4px;
+}
+
+.banner .banner-container .banner-text div p {
+  color: #FFF;
+  text-align: center;
+  
+  font-size: var(--fourth-font-size);
+  font-weight: 400;
+  line-height: var(--fourth-font-line-height);
+}
+
+.banner .banner-container .banner-text div a {
+  color: #FFF;
+
+  /* Button/Medium */
+  font-size: var(--fourth-font-size);
+  font-weight: 600;
+  line-height: var(--fourth-font-line-height);
+  letter-spacing: -0.4px;
+}
+
+footer {
+  padding: 7.2rem 5.2rem 3.2rem 5.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+  background-color: var(--second-color);
+}
+
+footer .footer-top {
+  display: flex;
+  gap: 0 38.4rem;
+  height: 16.2rem;
+}
+
+footer .footer-top .footer-top-left {
+  max-width: 31rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem 0rem;
+}
+
+footer .footer-top .footer-top-left div img {
+  margin-bottom: 1.6rem;
 }
 
 
+footer .footer-top .footer-top-left div p {
+  color: var(--fourth-color);
+
+  font-size: var(--second-font-size);
+  font-weight: 400;
+  line-height: var(--second-font-line-height);
+}
+
+footer .footer-top .footer-top-left .redes-sociais nav ul {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+footer .footer-top .footer-top-left .redes-sociais nav ul li a {
+    display: flex;
+    background: #fff;
+    padding: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+}
+
+
+footer .footer-top .footer-top-right {
+  display: flex;
+  gap: 0 12rem;
+}
+
+footer .footer-top .footer-top-right div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 13.4rem;
+}
+
+footer .footer-top .footer-top-right div span {
+  color: var(--primary-color);
+
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  line-height: var(--primary-font-line-height);
+}
+
+footer .footer-top .footer-top-right div nav ul {
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem 0;
+}
+
+footer .footer-top .footer-top-right div nav ul li a {
+  text-decoration: none;
+
+  color: #5F6980;
+
+  font-size: var(--primary-font-size);
+  font-weight: 400;
+  line-height: var(--six-font-line-height);
+}
+
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-bottom span {
+  color: #5F6980;
+  text-align: center;
+
+  /* Text/14px/Regular */
+  font-size: var(--primary-font-size);
+  font-weight: 400;
+  line-height: var(--six-font-line-height);
+}
+
+footer .footer-bottom .footer-bottom-menus {
+  display: flex;
+  gap: 0 3.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-bottom .footer-bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+footer .footer-bottom .footer-bottom-menu label, option, select {
+  color: var(--primary-color);
+
+  /* Button/XSmall */
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  line-height: var(--primary-font-line-height);
+}
+
+footer .footer-bottom .footer-bottom-menu label img {
+  display: flex;
+}
+
+footer .footer-bottom .footer-bottom-menu select {
+  border: none;
+  background-color: transparent;
+}
