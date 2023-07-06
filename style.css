@@ -87,10 +87,17 @@ header .container nav ul li {
   transition: background-color 0.3s linear 0s, color 0.3s linear 0s, color 0.1s linear 0s;
 }
 
+header .container .menu-section .menu-section-options ul li {
+  width: 7.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 header .container nav ul li:hover {
   background-color: var(--third-color);
   color: #fff;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 header .container nav ul li a {
@@ -303,6 +310,12 @@ section.promocao .promo-container a {
 
   color: #fff;
   text-decoration: none;
+
+  transition: all 0.3s linear 0s;
+}
+
+section.promocao .promo-container a:hover {
+  transform: scale(1.2);
 }
 
 section.cta {
@@ -348,10 +361,20 @@ section.cta .container-cta .cta-register input {
 }
 
 section.cta .container-cta .cta-register {
-  border-bottom: 1px solid #D0D5DD;
+  border-bottom: 1px solid var(--third-color);
   max-width: 54rem;
   display: flex;
-  padding: 1.3rem 0;
+  padding: 1.3rem;
+  transition: border 0.1s linear 0s;
+}
+
+section.cta .container-cta .cta-register:hover {
+  border: 1px solid var(--third-color);
+  border-radius: 1rem;
+}
+
+section.cta .container-cta .cta-register:hover {
+  
 }
 
 section.cta .container-cta .cta-register div {
@@ -367,11 +390,22 @@ section.cta .container-cta .cta-register input[type="email"] {
 }
 
 section.cta .container-cta .cta-register a {
+  display: flex;
+  padding: 1rem;
   font-size: var(--second-font-size);
   font-weight: 600;
   line-height: var(--fift-font-line-height);
   text-decoration: none;
   color: var(--primar-color);
+
+  transition: background-color 0.3s linear 0s, color 0.3s linear 0s, color 0.1s linear 0s;
+}
+
+section.cta .container-cta .cta-register a:hover {
+  background-color: var(--third-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 section.banner {
@@ -478,15 +512,20 @@ footer .footer-top .footer-top-left .redes-sociais nav ul {
 }
 
 footer .footer-top .footer-top-left .redes-sociais nav ul li a {
-    display: flex;
-    background: #fff;
-    padding: 0.9rem;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 50%;
+  display: flex;
+  background: #fff;
+  padding: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  transition: all 0.3s linear 0s;
+}
+
+footer .footer-top .footer-top-left .redes-sociais nav ul li a:hover {
+  border: 1px solid var(--primary-color);
 }
 
 
@@ -526,6 +565,12 @@ footer .footer-top .footer-top-right div nav ul li a {
   font-size: var(--primary-font-size);
   font-weight: 400;
   line-height: var(--six-font-line-height);
+  transition: all 0.3s linear 0s;
+}
+
+footer .footer-top .footer-top-right div nav ul li a:hover {
+  color: black;
+  font-weight: bold;
 }
 
 footer .footer-bottom {
@@ -556,6 +601,10 @@ footer .footer-bottom .footer-bottom-menu {
   justify-content: space-between;
   align-items: center;
   gap: 0.8rem;
+}
+
+footer .footer-bottom .footer-bottom-menu:hover, label, select, option {
+  cursor: pointer;
 }
 
 footer .footer-bottom .footer-bottom-menu label, option, select {
