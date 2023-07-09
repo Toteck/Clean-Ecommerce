@@ -60,12 +60,64 @@ header .container .menu-section .header-img {
   cursor: pointer;
 }
 
+.fa-solid.fa-caret-down {
+  font-size: 1.5rem;
+}
+
 header .container .menu-section {
   display: flex;
   /* max-width: 87.2rem; */
   width: 100%;
   justify-content: space-between;
 }
+
+header .container .menu-section .menu-section-options .products-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 10rem;
+}
+
+header .container .menu-section .menu-section-options .products-dropdown .dropbtn {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  transition: background-color 0.3s linear 0s, color 0.3s linear 0s, color 0.1s linear 0s;
+}
+
+header .container .menu-section .menu-section-options .products-dropdown .products-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  background-color: var(--third-color);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  min-width: 10rem;
+  width: 100%;
+  left: 0;
+}
+
+header .container .menu-section .menu-section-options .products-dropdown .products-content a {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s linear 0s;
+}
+
+header .container .menu-section .menu-section-options .products-dropdown .products-content a:hover {
+  background-color: var(--fourth-color);
+}
+
+
+/* header .container .menu-section .menu-section-options .products-dropdown:hover .products-content {
+  display: flex;
+} */
 
 header .container nav ul {
   display: flex;
@@ -710,6 +762,15 @@ footer .footer-bottom .footer-bottom-menu select {
 
   html {
     font-size: 62.5%;
+  }
+
+ header .container .menu-section .menu-section-options .products-dropdown {
+  max-width: 90%;
+}
+
+  header .container .menu-section .menu-section-options .products-dropdown .dropbtn {
+    width: 100%;
+    justify-content: space-between;
   }
 
   header .container .header-img {
