@@ -28,20 +28,17 @@ menuToggleProducts.addEventListener("click", () => {
   }
 })
 
-// toggleMenuProducts() {
-//   let menu = document.getElementById("products-dropdown");
-//   if (x.style.display === "flex") {
-//     menu.style.display = "none"
-//   } else {
-//     menu.style.display = "flex";
-//   }
-// }
+let acc = document.getElementsByClassName("accordion");
 
-// function myFunction() {
-//   var x = document.getElementById("myLinks");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

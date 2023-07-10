@@ -1022,7 +1022,42 @@ footer .footer-top .footer-top-right div {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  width: 90%;
+  width: 100%;
 }
+
+  footer .footer-top .footer-top-right div span {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+  }
+
+  footer .footer-top .footer-top-right div .active, span:hover {
+  background-color: #ccc;
+}
+
+  footer .footer-top .footer-top-right div span:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+  footer .footer-top .footer-top-right div .active:after {
+    content: "\2796";
+  }
+
+  footer .footer-top .footer-top-right div nav {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  }
 
 }
