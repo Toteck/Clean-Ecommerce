@@ -593,8 +593,11 @@ footer {
 
 footer .footer-top {
   display: flex;
-  gap: 0 38.4rem;
-  height: 16.2rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 144rem;
+    height: auto;
+    margin: auto;
 }
 
 footer .footer-top .footer-top-left {
@@ -644,8 +647,9 @@ footer .footer-top .footer-top-left .redes-sociais nav ul li a:hover {
 
 
 footer .footer-top .footer-top-right {
-  display: flex;
-  gap: 0 12rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
 footer .footer-top .footer-top-right div {
@@ -691,6 +695,9 @@ footer .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 144rem;
+  margin: auto;
 }
 
 footer .footer-bottom span {
@@ -762,7 +769,7 @@ footer .footer-bottom .footer-bottom-menu select {
 
   main section.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     padding: 0;
     width: 90%;
     margin: auto;
@@ -795,10 +802,15 @@ footer .footer-bottom .footer-bottom-menu select {
   
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
 
   html {
-    font-size: 62.5%;
+    font-size: 50%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
 
  header .container .menu-section .menu-section-options .products-dropdown {
@@ -811,6 +823,7 @@ footer .footer-bottom .footer-bottom-menu select {
   }
 
   header .container .header-img {
+    align-self: flex-start;
     z-index: 11;
   }
   
@@ -905,5 +918,82 @@ footer .footer-bottom .footer-bottom-menu select {
     margin-bottom: 1rem;
     border: 1px solid var(--primary-color);
   }
+
+  .hero .container .hero-image {
+    max-width: 100%;
+    margin: 3rem 0;
+}
+
+  .hero .hero-text-container {
+    text-align: center;
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  section.logos .container-logos {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(125px, 1fr));
+    grid-gap: 5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+  main section.cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5.2rem;
+    justify-items: center;
+}
+
+  section.promocao .promocao-img {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  section.promocao .container .promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  section.promocao .promo-container .promo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.promocao .promo-container .promo-text p {
+    text-align: center;
+  }
+
+  section.cta .container-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 54rem;
+    width: 100%;
+  }
+
+  section.cta .container-cta .cta-register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  section.cta .container-cta .cta-register a {
+    justify-content: center;
+  }
+
+  section.banner {
+    margin: auto;
+    max-width: 90%;
+}
 
 }
