@@ -507,14 +507,15 @@ section.cta .container-cta .cta-register a {
   font-weight: 600;
   line-height: var(--fift-font-line-height);
   text-decoration: none;
-  color: var(--primar-color);
-
+  color: var(--second-color);
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
   transition: background-color 0.3s linear 0s, color 0.3s linear 0s, color 0.1s linear 0s;
 }
 
 section.cta .container-cta .cta-register a:hover {
   background-color: var(--third-color);
-  color: #fff;
+  color: var(--primary-color);
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -838,12 +839,12 @@ footer .footer-bottom .footer-bottom-menu select {
     margin: 6px auto;
   }
 
-  .menu-toggle {
+  header .container .menu-section .menu-toggle {
     width: 3rem;
     height: 3rem;
     margin-right: 1rem;
-    right: 10px;
-    top: 20px;
+    right: 25px;
+    top: 15px;
     position: absolute;
   }
 
@@ -884,7 +885,7 @@ footer .footer-bottom .footer-bottom-menu select {
   }
 
   .menu-section.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(45deg) translate(6px, 7px);
   }
 
   .menu-section.on .menu-toggle .two {
@@ -919,6 +920,26 @@ footer .footer-bottom .footer-bottom-menu select {
     border: 1px solid var(--primary-color);
   }
 
+  header .container .menu-section .icones ul li a {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  header .container .menu-section .icones ul li span {
+    display: block;
+    position: static;
+    font-size: var(--primary-font-size);
+  color: var(--primary-color);
+  text-align: left;
+  background-color: transparent;
+  }
+
+  header .container .menu-section .icones ul li span::after {
+  content: none;
+  position: static;
+}
+  
   .hero .container .hero-image {
     max-width: 100%;
     margin: 3rem 0;
@@ -1004,11 +1025,31 @@ footer .footer-bottom .footer-bottom-menu select {
   footer .footer-top {
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
-}
+  }
+
+  footer .footer-top div {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  footer .footer-bottom {
+    flex-direction: column;
+    gap: 4rem;
+  }
 
   footer .footer-top .footer-top-left {
     align-items: center;
+  }
+
+  footer .footer-bottom .footer-bottom-menus {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer .footer-bottom .footer-bottom-menu {
+    width: 100%;
   }
 
   footer .footer-top .footer-top-right {
