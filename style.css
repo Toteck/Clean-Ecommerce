@@ -95,7 +95,7 @@ header .container .menu-section .menu-section-options .products-dropdown .produc
   top: 100%;
   background-color: var(--third-color);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
   gap: 1rem;
   border-radius: 0.5rem;
   min-width: 10rem;
